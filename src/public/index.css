@@ -1,0 +1,29 @@
+html {
+    background: red;
+  }
+  body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 1280px;
+    height: 720px;
+    margin: 0;
+    overflow: clip;
+    box-sizing: border-box;
+    background: white;
+  }
+  header {
+    position: relative;
+    background: #37a985;
+    color: white;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 15px;
+    border-bottom: 2px solid #2e9171;
+    background: -webkit-gradient(linear, left top, left bottom, from(#59c9a5), to(#37a985));
+    z-index: 19;
+  }
+  header h1 {
+  margin: 0;
+  font-size: 30px;
+  }

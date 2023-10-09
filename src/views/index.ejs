@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>Account Settings</title>
+        <link rel="stylesheet" type="text/css" href="/v1/account-settings/css/index.css">
+        <script src="/v1/account-settings/js/index.js""></script>
+    </head>
+    <body>
+        <header>
+            <h1>User Settings</h1>
+        </header>
+        <button onclick="window.location.reload()">reload</button>
+        <button onclick="alert(window.innerWidth)">width</button>
+        <button onclick="alert(window.innerHeight)">height</button>
+        <div class="body-content">
+            <form method="post" action="/users/me/settings" id="settings-form">
+            <div class="settings-list-content">
+                <ul class="settings-list">
+                    <li data-name="profile_comment_visibility" class="scroll">
+                        <p class="settings-label">Show Country</p>
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="country" name="country" value="true">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <li data-name="game_skill" class="scroll">
+                        <p class="settings-label">Show Birthday</p>
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="birthday" name="birthday" value="true">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <li data-name="game_skill_visibility" class="scroll">
+                        <p class="settings-label">Show Game</p>
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="experience" name="experience" value="true">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <!--<li data-name="birthday_visibility" class="scroll">
+                    <p class="settings-label">Show Profile Comment on Profile</p>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="comment" name="comment" value="true">
+                        <span class="checkmark"></span>
+                    </label>
+                </li>-->
+                    <input type="submit" class="post-button fixed-bottom-button" value="Save">
+                </ul>
+            </div>
+            </form>
+        </div>
+    </body>
+ </html>
